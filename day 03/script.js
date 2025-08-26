@@ -24,4 +24,3 @@ const students = [
                     `<h2>Passed Students:</h2>` +
                       passed.map(s => `<div class="student">${s.name}</div>`).join('') +
                         `<h2>Class Average: ${classAverage.toFixed(2)}</h2>`;
-]
