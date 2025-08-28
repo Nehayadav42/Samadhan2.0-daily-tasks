@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Records</h1>
+
+    <!-- Student List -->
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Add Student Form -->
+    <h2>Add New Student</h2>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <input type="number" id="marks" placeholder="Enter Marks" required>
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
