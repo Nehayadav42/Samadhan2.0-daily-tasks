@@ -1,0 +1,91 @@
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.3), transparent, rgba(255,255,255,0.3));
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+}
+
+.profile-card:hover::after {
+  left: 100%;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #7f5af0;
+  margin-bottom: 12px;
+}
+
+.profile-card h2 {
+  font-size: 1.3rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+.profile-card h4 {
+  font-size: 0.9rem;
+  color: #7f5af0;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.connect-btn {
+  background: #7f5af0;
+  color: white;
+}
+
+.connect-btn:hover {
+  background: #5a35c9;
+}
+
+.msg-btn {
+  background: #ff3d68;
+  color: white;
+}
+
+.msg-btn:hover {
+  background: #d72a50;
+}
