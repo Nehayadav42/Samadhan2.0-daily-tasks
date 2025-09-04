@@ -1,0 +1,101 @@
+/* Background */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ebf4ff, #e0e7ff);
+  font-family: Arial, sans-serif;
+}
+
+/* Main box */
+.todo-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;  /* ✅ Center text by default */
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4f46e5; /* indigo */
+  margin-bottom: 1.5rem;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: center; /* ✅ Center the input + button */
+  margin-bottom: 1rem;
+}
+
+.task-input {
+  flex: 1;
+  max-width: 70%; /* ✅ Prevents it from stretching too much */
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.task-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px #c7d2fe;
+}
+
+.add-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #4f46e5;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef2ff;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #374151;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center;       /* ✅ Center text inside */
+}
+
+.todo-item span {
+  flex: 1;
+  text-align: center;       /* ✅ Centers the task text */
+}
+
+/* Delete button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
